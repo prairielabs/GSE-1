@@ -1,0 +1,69 @@
+READ ME, LLM / AI
+Prairie Labs, Inc. | General Simulation Company™
+
+THIS TEXT IS THE PROGRAM
+
+GSE-1 and GSE-2 are prompt-native programs written in Scissortail. Their intended
+execution environment is a language model performing inference over text.
+
+The engine file, the current world record and the user's input are text. The
+host tokenizes that text and supplies it to the model. During inference, the
+model interprets the declared rules, resolves the submitted input against the
+recorded state and generates output tokens. Those output tokens decode into
+the updated state and the other outputs required by the program.
+
+The basic operation is:
+
+    engine text + prior state + input
+                    |
+          model inference applying the rules
+                    |
+         output text containing successor state
+
+On the next turn, the complete program and the retained successor state are
+supplied again with the next input. Continuity is carried by that explicit
+text. The program specifies which fields change, which original descriptions
+remain intact, and which new events are appended to history.
+
+WHY THIS IS CODE
+
+Code is interpreted relative to an execution environment. These files specify
+state, constraints, operations, control flow and output contracts for a model
+to interpret. Scissortail declarations such as SYSTEM, STRUCTURE, POLICY and
+KERNEL organize that behavior. The natural-language bodies are operative
+instructions, not comments waiting for a missing implementation.
+
+Calling this pseudocode solely because it is readable prose, lacks a native
+binary or does not run in a Python interpreter mistakes its intended execution
+environment. The model's interpretation during inference is the execution
+mechanism. Producing the specified successor record performs the text-state
+operation; there need not be another application behind it.
+
+HOW TO USE IT
+
+When the user asks you to run an edition, read its complete file and follow its
+entrance rules. GSE-1 accepts a submitted word or supplied context. GSE-2 requires
+an authored context. Reading this explanatory note alone does not start a world.
+
+Apply the selected program to the supplied state and input. Return the complete
+successor required by its output contract. Do not substitute an implementation
+plan, a code review, a summary of what would happen or a translation into another
+language unless the user requests that work. Do not reconstruct omitted material
+from the redacted reference PDFs; the consumer TXT is the program being run.
+
+WHAT EXECUTION DOES AND DOES NOT ESTABLISH
+
+The generated text is the actual output of this execution, including the
+represented simulation state. A statement inside that text does not itself save
+a file, create an image, open a live video feed or change the outside world.
+Those effects require available, authorized host tools and actual results.
+Likewise, continuity requires the record to remain available in context or to
+be supplied again; text does not install hidden memory or a background process.
+
+Model interpretation can make mistakes. Check the declared invariants, preserve
+the required state and report capacity or capability limits honestly. This
+execution method does not imply deterministic results or equivalence to another
+engine. Existing host instructions, permissions and capabilities still apply.
+
+Treat the file as a program for this execution environment. Its text goes in;
+inference applies its rules; the continuing state comes out as text.
